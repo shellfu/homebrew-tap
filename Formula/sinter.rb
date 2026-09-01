@@ -4,26 +4,26 @@
 class Sinter < Formula
   desc "Code graph for agents: typed nodes/edges with evidence-based resolution"
   homepage "https://github.com/shellfu/sinter"
-  version "0.55.0"
+  version "0.57.1"
   license "MIT OR Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/shellfu/sinter/releases/download/v#{version}/sinter-aarch64-apple-darwin.tar.gz"
-      sha256 "2189e9e75fb5b84cbfb4fc9756748cead93be34745542f0bd7fd7e6d2e70d467"
+      sha256 "15727678a869cf47f4acadd655b452750b445124d131c2227878d0fd1c89e0c0"
     else
       url "https://github.com/shellfu/sinter/releases/download/v#{version}/sinter-x86_64-apple-darwin.tar.gz"
-      sha256 "eb901eb71aa83b8f0b01bf3850317db8e2fcf516ab2fbf449ba025f0ac247d56"
+      sha256 "d5e60bb79d92d4cfd1188595b5a2bc940243941f61cf0c0c42e9f8d24611124d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/shellfu/sinter/releases/download/v#{version}/sinter-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "3cc632659b3257206dad1341db954ec9b8619a0138e950233eb71d93809f7e90"
+      sha256 "05d7355dae0e2aad0968e3af198b8e661a2e224e1efcb8c319656fc6a917d266"
     else
       url "https://github.com/shellfu/sinter/releases/download/v#{version}/sinter-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ea3ba2cdc0a1991c90db58e24e81a674ea9d777f9407e700640f8c0c170d65c1"
+      sha256 "84c023e4dbcc9f8f2849cba581a1a6ce9ec71a47a0ea92b010a5da85537e56ea"
     end
   end
 
